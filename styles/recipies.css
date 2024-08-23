@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(118, 169, 128);
+    font-family: Roboto;
+    color:rgb(231, 231, 231);
+}
+
+img{
+    border-radius:10px;
+    width:400px;
+    object-fit: contain;
+}
+
+h1{
+    color:white;
+}

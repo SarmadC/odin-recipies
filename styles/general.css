@@ -1,0 +1,21 @@
+
+body{
+    background-color: rgb(118, 169, 128);
+    font-family: Roboto;
+    color:rgb(231, 231, 231);
+}
+
+img{
+    border-radius: 20px;
+    width:300px;
+}
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+h1 {
+    text-align: center;
+}
