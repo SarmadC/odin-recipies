@@ -1,15 +1,93 @@
-body{
-    background-color: rgb(118, 169, 128);
-    font-family: Roboto;
-    color:rgb(231, 231, 231);
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(54, 50, 50);
+    font-size: 17px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
 }
 
-img{
-    border-radius:10px;
-    width:400px;
-    object-fit: contain;
+header {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-h1{
-    color:white;
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1080px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.recipe-image,
+.content,
+.ingridients-container,
+.instructions-container {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.recipe-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.ingridients-container {
+    grid-area: 2/1/3/2;
+
+
+}
+
+.content {
+    grid-area: 1/2/2/3;
+}
+
+.instructions-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 768px) {
+    .recipe-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-image,
+    .ingridients-container,
+    .content,
+    .instructions-container {
+        grid-column: 1 / 2;
+    }
+
+    .ingridients-container {
+        grid-row: 2 / 3;
+    }
+
+    .content {
+        grid-row: 3 / 4;
+    }
+
+    .instructions-container {
+        grid-row: 4 / 5;
+    }
 }
